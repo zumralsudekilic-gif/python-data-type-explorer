@@ -3,12 +3,30 @@ print("     PYTHON DATA TYPE EXPLORER")
 print("=================================")
 
 data = [25, 3.14, "Zümral", True]
+print("\nMenu")
+print("1 - Show All Data")
+print("2 - Select by Index")
+print("3 - Exit")
+
+choice = input("Choose an option: ")
+
+# Menüye göre işlem
+if choice == "1":
+    print(data)
+    
+elif choice == "2":
+    # Buraya index seçme ve veri tipi kodlar gelecek
+    
+elif choice == "3":
+    print("Goodbye!")
+    
+else:
+    print("Invalid menu selection.")
 
 print("\nData in the list:")
 print(data)
 
 index=int(input("\nEnter an index (0-3): "))
-
 print("Selected value:", data[index])
 print("Data type:", type(data[index]))
 if type(data[index]) == int:
