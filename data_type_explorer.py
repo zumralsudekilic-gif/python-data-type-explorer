@@ -20,4 +20,10 @@ elif type(data[index]) == str:
 elif type(data[index]) == bool:
     print("This is a boolean (bool).")
 
+except IndexError:
+    print("Error: Invalid index!")
+
+except ValueError:
+    print("Error: Please enter a number!")
+
 
